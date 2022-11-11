@@ -5,10 +5,10 @@
 */
 
 const data = {
-	labels: ['C++/C', 'JS', 'HTML/CSS', 'C#', '.NET', 'SQL', 'Python'],
+	labels: ['C++/C', 'JS', 'HTML/CSS', 'C#', '.NET', 'React', 'SQL'],
 	datasets: [{
 	  label: 'Percentage',
-	  data: [100, 80, 70, 60, 60, 50, 20],
+	  data: [100, 80, 70, 60, 60, 50, 50],
 	  backgroundColor: [		
 		'rgba(210, 180, 140, 0.2)',		
 	  ],
@@ -320,12 +320,6 @@ const data = {
 })(jQuery);
 
 function myFunction() {
-	//var x = document.getElementById("myDIV");
-	// if (x.style.display === "none") {
-	//   x.style.display = "block";
-	// } else {
-	//   x.style.display = "none";
-	// }
 	var x =document.getElementById("resumeid");
 	modal.style.display = "block";
  	modalImg.src = x.src;
