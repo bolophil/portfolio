@@ -336,7 +336,7 @@ function downloadButton(){
         var url = window.URL.createObjectURL(blob);
 
         a.href = url;
-        a.download = "Alex Nguyen resume.pdf"; // Name of the downloaded file
+        a.download = "Alex Nguyen resume.pdf";
         a.click();
         window.URL.revokeObjectURL(url);
       });
