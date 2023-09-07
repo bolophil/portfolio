@@ -325,8 +325,7 @@ function myFunction() {
  	modalImg.src = x.src;
 }
 function downloadButton(){
-	console.log("download");
-	var pdf_url = "https://www.linkedin.com/in/alex-nguyen-788844236/details/featured/1635539061776/single-media-viewer/?profileId=ACoAADrbY1gB-3sNXhP97dsctig2-SoswGAUe18";
+	var pdf_url = "https://raw.githubusercontent.com/bolophil/portfolio/main/resume.pdf";
     var a = document.createElement("a");
     a.style.display = "none";
     document.body.appendChild(a);
