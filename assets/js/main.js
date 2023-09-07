@@ -324,7 +324,26 @@ function myFunction() {
 	modal.style.display = "block";
  	modalImg.src = x.src;
 }
+function downloadButton(){
+	console.log("download");
+	var pdf_url = "https://www.linkedin.com/in/alex-nguyen-788844236/details/featured/1635539061776/single-media-viewer/?profileId=ACoAADrbY1gB-3sNXhP97dsctig2-SoswGAUe18";
+    var a = document.createElement("a");
+    a.style.display = "none";
+    document.body.appendChild(a);
 
+    fetch(pdf_url)
+      .then(response => response.blob())
+      .then(blob => {
+        var url = window.URL.createObjectURL(blob);
+
+        a.href = url;
+        a.download = "Alex Nguyen resume.pdf"; // Name of the downloaded file
+        a.click();
+        window.URL.revokeObjectURL(url);
+      });
+
+    document.body.removeChild(a);
+}
 function SendEmail(){
 	window.open('mailto:alex.c.nguyen93@gmail.com');
 }
